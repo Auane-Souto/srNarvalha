@@ -70,12 +70,53 @@ i{
 }
 
 #servicesSection{
+    background-image: url("assets/barbeiro.jpg");
+    background-size: cover;
+
+    .overlay{
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff70;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 4rem;
+            color: #000000;
+            text-transform: uppercase;
+            padding-bottom: 70px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            gap: 27px;
+            padding-bottom: 40px;
+        }
+
+        li{
+            background-color: #00000039;
+            padding: 12px 17px;
+            border-radius: 8px;
+            color: #ffffff;
+        }
+
+        .services{
+            background-color: #00000039;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+            padding: 18px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
 
 }   
-
-#contactSection{ 
-    background-color: #1a1a1a;
-}
 
 .services{
     background-color: #b6b6b6;
@@ -87,10 +128,72 @@ i{
     cursor: pointer;
 }
 
+
+#contactSection{ 
+    background-color: #ededed;
+    display: flex;
+
+    #contactText{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: 3rem;
+            padding-bottom: 30px;
+        }
+
+
+        p{
+            color: #000000;
+            font-size: 1.56rem;
+        }
+
+        #textChild{
+            width: 80%;
+            max-width: 700px;
+        }
+        
+    }
+        
+
+    #contactPhoto{
+        background-image: url("assets/Logo.SrN.png");
+        width: 40vw;
+        background-size: cover;
+    }
+
+}
+
+.contactInfo{
+    padding-top: 20px;
+    font-style: normal;
+
+    .contactFlex{
+        display: flex;
+        padding-top: 8px;
+    }
+
+    p{
+        padding-left: 14px;
+    }
+
+    i{
+        font-size: 20px;
+        color: #000000;
+    }
+
+}
+
 #homePhoto{
-    background-image: url(assets/barbeiro.jpg);
+    background-image: url("assets/barbeiro2.jpg");
     background-size: cover;
     background-position: center;
     width: 100vh;
     height: calc(100vh - 65px);
 }
+
+
+
